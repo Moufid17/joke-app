@@ -28,6 +28,6 @@ jobs:
       
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
-          heroku_api_key: ad062419-88a2-451b-a589-a2e37a5a43f8
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "joke-app-mfd" #Must be unique in Heroku
           heroku_email: "moufid.mtr@gmail.com"
